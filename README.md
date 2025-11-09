@@ -1,6 +1,6 @@
-# OmicsChart Rmarkdown Theme
+# Vedaly Rmarkdown Theme
 
-This theme creates `html_report` and `pdf_report` compatible with OmicsChart 
+This theme creates `html_report` and `pdf_report` compatible with Vedaly 
 PREON platform. Key features include:
 
 *  Integration with commenting on selected text within the report on PREON
@@ -8,7 +8,7 @@ PREON platform. Key features include:
 own report
 *  `info` and `warning` boxes for emphasizing 
 
-To use `info` and `warning` formating boxes, use the following syntax:
+To use `info` and `warning` formatting boxes, use the following syntax:
 
 ```
 ::: {.warning data-latex=""}
@@ -20,4 +20,11 @@ Some warning text that will appear in a yellow box
 ::: {.info data-latex=""}
 Some info text that will appear in a blue box
 :::
+```
+
+# Installing the package
+
+```
+devtools::document()
+devtools::install()
 ```

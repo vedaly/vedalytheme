@@ -6,21 +6,21 @@
 html_report <- function( toc = TRUE, theme = "flatly", ...) {
   css <- system.file(
     "rmarkdown/templates/html_report/custom.css",
-    package = "omicscharttheme"
+    package = "vedalytheme"
   )
   logo = system.file(
-    "rmarkdown/resources/omicschart-logo.png",
-    package = "omicscharttheme"
+    "rmarkdown/resources/vedaly-logo.png",
+    package = "vedalytheme"
   )
 
   # update header file with correct logo path
   header <- system.file(
     "rmarkdown/templates/html_report/header.html",
-    package = "omicscharttheme"
+    package = "vedalytheme"
   )
   tx  <- readLines(header)
   tx2  <- gsub(
-    pattern = "\"omicschart-logo.png\"",
+    pattern = "\"vedaly-logo.png\"",
     replace = paste0("\"", logo, "\""),
     x = tx
   )
@@ -29,11 +29,11 @@ html_report <- function( toc = TRUE, theme = "flatly", ...) {
   # update footer file with correct logo path
   footer <- system.file(
     "rmarkdown/templates/html_report/footer.html",
-    package = "omicscharttheme"
+    package = "vedalytheme"
   )
   tx  <- readLines(footer)
   tx2  <- gsub(
-    pattern = "\"omicschart-logo.png\"",
+    pattern = "\"vedaly-logo.png\"",
     replace = paste0("\"", logo, "\""),
     x = tx
   )

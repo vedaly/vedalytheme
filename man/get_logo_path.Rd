@@ -2,7 +2,7 @@
 % Please edit documentation in R/helpers.R
 \name{get_logo_path}
 \alias{get_logo_path}
-\title{Get the path to the OmicsChart logo}
+\title{Get the path to the Vedaly logo}
 \usage{
 get_logo_path()
 }
@@ -10,5 +10,5 @@ get_logo_path()
 Character string with the path to the logo
 }
 \description{
-Get the path to the OmicsChart logo
+Get the path to the Vedaly logo
 }

@@ -1,11 +1,10 @@
-Package: omicscharttheme
-Title: Custom OmicsChart Rmarkdown theme for HTML and PDF reports
+Package: vedalytheme
+Title: Custom Vedaly Rmarkdown theme for HTML and PDF reports
 Version: 0.0.0.9000
 Authors@R: 
-    person("Tanya", "Aneichyk", , "tanya@omicschart.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Tanya", "Aneichyk", , "tanya@vedaly.io", role = c("aut", "cre"))
+Description: Custom Vedaly Rmarkdown theme for HTML and PDF reports.
+License: `use_mit_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2

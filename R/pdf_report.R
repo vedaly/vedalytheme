@@ -7,7 +7,7 @@ pdf_report <- function(toc = TRUE, ...) {
 
 
     logo <- system.file(
-      "rmarkdown/resources/omicschart-logo.png",
+      "rmarkdown/resources/vedaly-logo.png",
       package = "omicscharttheme"
     )
 

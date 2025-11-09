@@ -1,27 +1,36 @@
 :root {
-  --omicschart-primary: #00203f;
-  --omicschart-primary-transparent: #0b2a49;
-  --omicschart-secondary: #ffffff;
-  --omicschart-tertiary: #006692;
-  --omicschart-link-color: #003366;
-  --omicschart-lightgray: #F5F5F5;
-  --omicschart-mediumgray: #bcbcbc;
-  --omicschart-darkgray: #9d9d9d;
-  --omicschart-lightblue: #CAE6FD;
-  --omicschart-aqua: #8dd3c7;
-  --omicschart-font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
-  --omicschart-disabled-gray-bg: #E0E0E0;
-  --omicschart-disabled-gray-tx: #4f4f4f;
-  --omicschart-shadow-color: rgba(0,0,0,0.1);
-  --omicschart-warning: #ef5350;
-  --omicschart-warning-bg: #fceded;
+  --vedaly-primary: #00203f;
+  --vedaly-primary-transparent: #0b2a49;
+  --vedaly-secondary: #ffffff;
+  --vedaly-tertiary: #006692;
+  --vedaly-link-color: #003366;
+  --vedaly-lightgray: #F5F5F5;
+  --vedaly-mediumgray: #bcbcbc;
+  --vedaly-darkgray: #9d9d9d;
+  --vedaly-lightblue: #CAE6FD;
+  --vedaly-aqua: #8dd3c7;
+  --vedaly-font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
+  --vedaly-disabled-gray-bg: #E0E0E0;
+  --vedaly-disabled-gray-tx: #4f4f4f;
+  --vedaly-shadow-color: rgba(0,0,0,0.1);
+  --vedaly-error: #ef5350;
+  --vedaly-error-bg: #fceded;
+  --vedaly-warning: #ffb300;
+  --vedaly-warning-bg: #fff8e1;
+  --vedaly-comment:#006692;
+  --vedaly-comment-bg: #edf2fa;
 }
 
 .logo-container {
   text-align: center;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
+  padding: 20px;
   max-width: 400px;
   height: auto;
 }
@@ -35,23 +44,33 @@ h1.title {
   text-align: center;
 }
 .warning {
-  background-color: #fff8e1;
-  border-left: 6px solid #ffb300;
-  color: var(--omicschart-primary);
+  background-color: var(--vedaly-warning-bg);
+  border-left: 6px solid var(--vedaly-warning);
+  color: var(--vedaly-primary);
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px var(--vedaly-shadow-color);
+}
+
+.comment {
+  background-color: var(--vedaly-comment-bg);
+  border-left: 6px solid var(--vedaly-comment);
+  color: var(--vedaly-primary);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px var(--vedaly-shadow-color);
 }
 
 .info {
-  background-color: var(--omicschart-lightblue);
-  border-left: 6px solid var(--omicschart-tertiary);
-  color: var(--omicschart-primary);
+  background-color: var(--vedaly-lightblue);
+  border-left: 6px solid var(--vedaly-tertiary);
+  color: var(--vedaly-primary);
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px var(--vedaly-shadow-color);
 }
 
 .oc-button-container {
@@ -63,19 +82,19 @@ h1.title {
 }
 
 .oc-button {
-  background-color: var(--omicschart-primary);
+  background-color: var(--vedaly-primary);
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: .375rem;
   border: none;
-  color: var(--omicschart-secondary);
+  color: var(--vedaly-secondary);
   transition: 0.2s ease-in-out;
   font-size: 14px;
 
   &:hover {
-    background-color: var(--omicschart-tertiary);
-    color: var(--omicschart-secondary);
+    background-color: var(--vedaly-tertiary);
+    color: var(--vedaly-secondary);
   }
 }

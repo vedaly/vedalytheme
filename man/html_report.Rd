@@ -4,7 +4,7 @@
 \alias{html_report}
 \title{Custom RMarkdown Theme}
 \usage{
-html_report(toc = TRUE, theme = "united", ...)
+html_report(toc = TRUE, theme = "flatly", ...)
 }
 \arguments{
 \item{...}{Arguments passed to the output format function.}

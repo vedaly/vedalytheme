@@ -5,7 +5,7 @@
 
 \pretitle{
   \begin{center}
-    \LARGE\includegraphics[width=12cm]{omicschart-logo.png}
+    \LARGE\includegraphics[width=12cm]{vedaly-logo.png}
     \\[\bigskipamount]
 }
 \posttitle{\end{center}}
@@ -17,6 +17,10 @@
 % info colors
 \definecolor{infobg}{HTML}{E3F2FD}
 \definecolor{infoborder}{HTML}{2196F3}
+
+% comment colors
+\definecolor{commentbg}{HTML}{EDF2FA}
+\definecolor{commentborder}{HTML}{006692}
 
 \newenvironment{warning}
 {\begin{mdframed}[
@@ -57,3 +61,24 @@
   ]
 }
 {\end{mdframed}}
+
+% comment environment
+\newenvironment{comment}
+{\begin{mdframed}[
+    linewidth=2pt,
+    leftline=true,
+    rightline=false,
+    topline=false,
+    bottomline=false,
+    linecolor=commentborder,
+    backgroundcolor=commentbg,
+    innerleftmargin=15pt,
+    innerrightmargin=15pt,
+    innertopmargin=15pt,
+    innerbottommargin=15pt,
+    roundcorner=4pt,
+    font=\sffamily
+  ]
+}
+{\end{mdframed}}
+
