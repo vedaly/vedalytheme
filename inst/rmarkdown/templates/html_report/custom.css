@@ -82,19 +82,19 @@ h1.title {
 }
 
 .oc-button {
-  background-color: var(--vedaly-primary);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: .375rem;
-  border: none;
-  color: var(--vedaly-secondary);
-  transition: 0.2s ease-in-out;
-  font-size: 14px;
+  background-color: var(--vedaly-primary) !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border-radius: .375rem !important;
+  border: none !important;
+  color: var(--vedaly-secondary) !important;
+  transition: 0.2s ease-in-out !important;
+  font-size: 14px !important;
 
   &:hover {
-    background-color: var(--vedaly-tertiary);
-    color: var(--vedaly-secondary);
+    background-color: var(--vedaly-tertiary) !important;
+    color: var(--vedaly-secondary) !important;
   }
 }

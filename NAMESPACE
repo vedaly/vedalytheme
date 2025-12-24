@@ -2,3 +2,4 @@
 
 export(html_report)
 export(pdf_report)
+export(vedalytable)

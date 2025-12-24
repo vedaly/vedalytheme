@@ -28,3 +28,27 @@ Some info text that will appear in a blue box
 devtools::document()
 devtools::install()
 ```
+
+If above fails with something like:
+
+```
+ℹ Updating vedalytheme documentation
+ℹ Loading vedalytheme
+Error in env_get_list(ns, names(active_bindings)[!active_bindings]) : 
+  lazy-load database '/opt/homebrew/lib/R/4.5/site-library/vedalytheme/R/vedalytheme.rdb' is corrupt
+In addition: Warning message:
+In env_get_list(ns, names(active_bindings)[!active_bindings]) :
+  internal error -3 in R_decompress1
+```
+
+then do:
+```
+try(detach("package:vedalytheme", unload = TRUE, character.only = TRUE), silent = TRUE)
+try(unloadNamespace("vedalytheme"), silent = TRUE)
+remove.packages("vedalytheme")
+unlink(c("man", "NAMESPACE", "vedalytheme.Rproj.user", ".Rproj.user"), recursive = TRUE, force = TRUE)
+unlink(list.files(pattern = "\\.Rds$|\\.rdb$|\\.rdx$|\\.o$|\\.so$|\\.dll$", recursive = TRUE, full.names = TRUE),
+       recursive = TRUE, force = TRUE)
+devtools::clean_dll()
+devtools::install(build = FALSE, force = TRUE)
+```

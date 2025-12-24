@@ -8,15 +8,15 @@ pdf_report <- function(toc = TRUE, ...) {
 
     logo <- system.file(
       "rmarkdown/resources/vedaly-logo.png",
-      package = "omicscharttheme"
+      package = "vedalytheme"
     )
 
     # update header file with correct logo path
     header <- system.file("rmarkdown/templates/pdf_report/header.tex",
-                       package = "omicscharttheme")
+                       package = "vedalytheme")
     tx  <- readLines(header)
     tx2  <- gsub(
-      pattern = "\\{omicschart-logo.png\\}",
+      pattern = "\\{vedaly-logo.png\\}",
       replace = paste0("\\{", logo, "\\}"),
       x = tx
     )
@@ -24,10 +24,10 @@ pdf_report <- function(toc = TRUE, ...) {
 
     # update footer file with correct logo path
     footer <- system.file("rmarkdown/templates/pdf_report/footer.tex",
-                          package = "omicscharttheme")
+                          package = "vedalytheme")
     tx  <- readLines(footer)
     tx2  <- gsub(
-      pattern = "\\{omicschart-logo.png\\}",
+      pattern = "\\{vedaly-logo.png\\}",
       replace = paste0("\\{", logo, "\\}"),
       x = tx
     )
